@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.ubereats.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ubereats.HelloController">
+   <children>
+      <ImageView fx:id="ImageId" fitHeight="563.0" fitWidth="937.0" layoutX="-2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/mainImg.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="1.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="79.0">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Uber%20Eats%20_%20Livraison%20de%20repas%20et%20courses%20à%20domicile-2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="search_text" layoutX="82.0" layoutY="245.0" prefHeight="64.0" prefWidth="312.0" promptText="Enter delivery text">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Button layoutX="421.0" layoutY="244.0" mnemonicParsing="false" onAction="#search_function" prefHeight="81.0" prefWidth="96.0" style="-fx-background-color: #000;" text="Search " textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="signUp" layoutX="799.0" layoutY="23.0" mnemonicParsing="false" onAction="#SignUp_Function" prefHeight="49.0" prefWidth="58.0" text="signup" />
+   </children>
+</AnchorPane>
