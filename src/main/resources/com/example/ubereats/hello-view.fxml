@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ubereats.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ubereats.HelloController">
    <children>
       <ImageView fx:id="ImageId" fitHeight="563.0" fitWidth="937.0" layoutX="-2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/mainImg.png" />
+            <Image url="@images/Mainpp.png" />
          </image>
       </ImageView>
-      <Button layoutX="1.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="79.0">
+      <Button layoutX="1.0" mnemonicParsing="false" onAction="#sideClick" prefHeight="59.0" prefWidth="79.0">
          <graphic>
             <ImageView fitHeight="51.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/Uber%20Eats%20_%20Livraison%20de%20repas%20et%20courses%20à%20domicile-2.png" />
+                  <Image url="@images/11.png" />
                </image>
             </ImageView>
          </graphic>
@@ -34,5 +35,10 @@
          </font>
       </Button>
       <Button fx:id="signUp" layoutX="799.0" layoutY="23.0" mnemonicParsing="false" onAction="#SignUp_Function" prefHeight="49.0" prefWidth="58.0" text="signup" />
+      <Label fx:id="sideError" alignment="CENTER" layoutX="89.0" layoutY="6.0" prefHeight="82.0" prefWidth="120.0" style="-fx-background-color: Aqua;" text="SignUp First" textFill="#f20d0d" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
